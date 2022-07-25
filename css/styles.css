@@ -363,6 +363,20 @@ address {
   background-color: var(--main-light-color);
 }
 
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--main-light-color);
+}
+
 /* Footer */
 
 .footer {
