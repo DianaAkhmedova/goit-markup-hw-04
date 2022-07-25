@@ -194,6 +194,10 @@ address {
   color: var(--accent-color);
 }
 
+.header-icon {
+  margin-right: 10px;
+}
+
 /* Hero */
 
 .hero {
