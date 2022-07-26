@@ -220,12 +220,12 @@ address {
 /* Hero */
 
 .hero {
-  min-width: 1600px;
-  min-height: 600px;
+  max-width: 1600px;
   padding: 200px 0;
+  margin: 0 auto;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,8 +281,10 @@ address {
 }
 
 .features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
 }
@@ -386,28 +388,31 @@ address {
 
 .client-list-link {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .client-link {
+  width: 170px;
+  height: 92px;
   display: flex;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--main-fill-color);
   border-radius: 4px;
-}
-
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .client-icon {
   fill: var(--main-fill-color);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* Footer */
@@ -516,6 +521,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  background-color: var(--main-light-color);
 }
 
 .projects-item {
@@ -523,14 +529,14 @@ address {
   background-color: var(--main-light-color);
 }
 
-.projects-item:hover,
-.projects-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-link {
+  display: block;
 }
 
-.projects-list {
-  background-color: var(--main-light-color);
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-card-content {
